@@ -9,8 +9,11 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
+   
     
 }
+
+
 
 
 .header{
@@ -20,7 +23,8 @@ body{
     margin-right: auto;
     background-color: rgb(167, 204, 218);
     display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
+    min-width:735px;
   
     
 }
@@ -59,9 +63,7 @@ body{
     font-weight: bold;
     text-decoration: none;
 }
-.navbar ul li a:active{
-    color: red;
-}
+
 .navbar ul li a:visited{
     color: rgb(57, 58, 48);
 }
@@ -71,22 +73,76 @@ body{
 .navbar ul li a:hover{
     color: rgb(100, 120, 123);
 }
-.descripcion {
-    width: 100%;
-    height: 180px;
+
+
+
+
+
+
+main{
+    
+    background-image: url(../imagenes/iconos/fondo2.png);
+    widows: 100%;
+    height: calc(108vh - 50px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
-.contenido-principal {
+
+.secciones {
+    top: 0;
+    left:0;
+    min-height: 200px;
+    margin: 0;
+    padding: 0;
     width: 100%;
-    height: 800px;
+    height: 100%;
+    color: antiquewhite;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content:center;
+    
+
+}
+
+
+.secciones h1{
+    margin-top: 40px;
+    font-size: 30px;
+    text-align:center;
+
+}
+
+.secciones p {
+    margin: 20px;
+    font-size: 20px;
+
+}
+
+.secciones a {
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 9px 20px;
+    border: 1px solid antiquewhite;
+    width: 150px;
+    text-align:center;
     margin-left: auto;
     margin-right: auto;
- 
-    min-height: 200px;
-    background: pink;
+
 }
-.secciones {
-    min-height: 200px;
+
+.secciones a:hover{
+    background-color: antiquewhite;
+    color: black;
+
 }
+
+
+
+
 footer {
     width: 9100%;
     height: 180px;
@@ -107,3 +163,4 @@ footer {
     text-align: center;
     padding: 20px;   
 }
+
