@@ -22,10 +22,17 @@
             <li><a href="../paginas/iniciarsersion.htm">Iniciar Sesion</a></li>
           </ul>
         </nav>
-      <div class="header-contenido">
-        <div class="header-txt">
-        </div>
-        
+
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+           <div id="mobile-menu" class="overlay">
+                 <a onclick="closeNav()" href="" class="close">&times;</a>
+                 <div class="overlay-content">
+                  
+                  <a href="../paginas/productos.html">Productos</a>
+                  <a href="../paginas/contacto.html">Contacto</a>
+                  <a href="../paginas/iniciarsersion.htm">Iniciar Sesion</a>
+           </div>
       </div>
     </header>
     <main>
@@ -62,5 +69,7 @@
     </div>
   
     </footer>
+
+    <script type="text/javascript" src="../script.js"></script>
   </body>
 </html>

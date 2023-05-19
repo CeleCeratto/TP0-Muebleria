@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" href="/imagenes/iconos/Icono de pagina.ico" type="image/x-icon">
-    <title>Iniciar Sesion</title>
+    <title>Pagina Principal</title>
 </head>
 <body>
+  
   <header class="header">
     <div>
       <a href="../home.html"><img src="/imagenes/iconos/studio vintage.png" id="logo"></a>
@@ -17,40 +18,48 @@
       <nav class="navbar">
         <ul>
           
-          <li><a href="../paginas/servicios.html">Servicios</a></li>
-          <li><a href="../paginas/productos.html">Productos</a></li>
-          <li><a href="../paginas/contacto.html">Contacto</a></li>
-          
+          <li><a href="paginas/servicios.html">Servicios</a></li>
+          <li><a href="paginas/productos.html">Productos</a></li>
+          <li><a href="paginas/contacto.html">Contacto</a></li>
+          <li><a href="../paginas/iniciarsersion.htm">Iniciar Sesion</a></li>
+
         </ul>
       </nav>
-    <div class="header-contenido">
-      <div class="header-txt">
+      <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+           <div id="mobile-menu" class="overlay">
+                 <a onclick="closeNav()" href="" class="close">&times;</a>
+                 <div class="overlay-content">
+                  <a href="./paginas/servicios.html">Servicios</a>
+                  <a href="./paginas/productos.html">Productos</a>
+                  <a href="./paginas/contacto.html">Contacto</a>
+                  
+           </div>
       </div>
-      
-    </div>
   </header>
   <main>
+    
+    
+ 
 <div class="contenido-principal">
   <section class="secciones">
-    <h1>Inicie Sesion para realizar sus compras</h1>
+    <h1>Descripcion</h1>
     <p class="descripcion">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit.
       Laboriosam, odio. Rem amet repellat maiores, id consequuntur nisi ab
       enim incidunt error aliquid dolorum deserunt sint dignissimos nulla
       iusto corporis mollitia!
     </p> 
+   <a  href="./paginas/productos.html">PRODUCTOS</a> 
   </section>
-  <section class="secciones">
-    <h2>Nuestros productos</h2>
-    
-  </section>
+ 
 </div>
 </main>
 
 <footer class="footer">
   <div class="datos">
     <p>Calle sin nombre 1234</p>
-    <p>Telef: 1565444122</p>
+    <p>Telef: 555555</p>
     <p>info@codoacodo@bue.edu.ar</p>
   </div>
   <div class="redes">
@@ -63,5 +72,7 @@
   </div>
 
   </footer>
+
+  <script type="text/javascript" src="../script.js"></script>
 </body>
 </html>
