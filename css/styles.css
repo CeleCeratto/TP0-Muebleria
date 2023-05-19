@@ -179,6 +179,24 @@ footer {
 
 /* media */
 
+/**/.header .menu button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+.header .menu button:hover{
+    background-color: #e2f1f8;
+    color: #392e12;
+    transform: scale(1.1);
+}
 .header a{
     text-decoration: none;  
     /*borramos el que teniamos en .header .nav-links a*/ 
@@ -191,12 +209,12 @@ footer {
     z-index: 1;
     left: 0;
     top: 0;
-    background-color: rgba(33, 49, 63, .95);
+    background-color: rgba(15, 31, 44, 0.95);
     overflow: hidden;
     transition: all 0.3s ease 0s;
 }
 
-#overlay-content{
+.navbar .overlay .overlay-content{
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -204,18 +222,17 @@ footer {
     justify-content: center;    
 }
 
-.header .overlay a{
+.header .overlay a {
     padding: 15px;
     font-size: 36px;
     display: block;
     transition: all 0.3s ease 0s;
-    font-weight: 700;
-    color: #eceff1;
+    font-weight: 700; 
+    color: #ccd9e1;
 }
 
-.header .overlay a:hover, 
-.header .overlay a:focus{
-    color: #ffbc0e;
+ .overlay a:hover,  .overlay a:focus{
+    color: #686253;
 }
 
 .header .overlay .close{
