@@ -8,35 +8,39 @@
     list-style: none;
     font-family: 'Poppins', sans-serif;
 }
-body{
-   
-    
-}
 
 
 
 
-.header{
+
+    .header
+    {
     width: 100%;
     height: 70px;
-    margin-left: auto;
     margin-right: auto;
     background-color: rgb(167, 204, 218);
     display: flex;
     justify-content: space-between;
-    min-width:735px;
-  
+    align-items: center;
     
+  }
+
+
+  body{
+      
 }
+
 #logo {
    width: 200px;
    height: 200px;
-   margin-top: -60px;
+   margin-right: auto;
+   transition: all 0.3s;
    
-   
-
 }
 
+img:hover{
+    transform: scale(1.1);
+}
 
 .navbar {
     width: 100%;
@@ -48,20 +52,17 @@ body{
 .navbar ul{
     margin: 0;
     padding: 0;
-    list-style: none;
     float: right;
-   
-    
 }
 
 .navbar ul li{
     display: inline; /* pone en linea el menu*/   
 }
 .navbar ul li a{
-    display: inline-block;
+    
     padding: 10px;
     font-weight: bold;
-    text-decoration: none;
+    
 }
 
 .navbar ul li a:visited{
@@ -72,9 +73,21 @@ body{
 }
 .navbar ul li a:hover{
     color: rgb(100, 120, 123);
+
 }
 
+.menu{
+    display: none;
+}
 
+/**/@media screen and (max-width: 800px){
+    .navbar, .btn {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+}
 
 
 
@@ -136,7 +149,7 @@ main{
 
 .secciones a:hover{
     background-color: antiquewhite;
-    color: black;
+    color: rgb(0, 0, 0);
 
 }
 
@@ -164,3 +177,61 @@ footer {
     padding: 20px;   
 }
 
+/* media */
+
+.header a{
+    text-decoration: none;  
+    /*borramos el que teniamos en .header .nav-links a*/ 
+}
+
+.header .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(33, 49, 63, .95);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+#overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+.header .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: #eceff1;
+}
+
+.header .overlay a:hover, 
+.header .overlay a:focus{
+    color: #ffbc0e;
+}
+
+.header .overlay .close{
+    position: absolute;
+    top: 20px;
+    right: 20%;
+    font-size: 65px;
+}
+
+@media screen and (max-height:450px) {
+    .header .overlay a{
+        font-size: 20px;
+    }
+    .header .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
