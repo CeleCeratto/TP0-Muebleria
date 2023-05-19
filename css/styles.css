@@ -220,7 +220,7 @@ main{
 .header .overlay .close{
     position: absolute;
     top: 20px;
-    right: 20%;
+    right: 20px;
     font-size: 65px;
 }
 
