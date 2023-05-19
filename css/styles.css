@@ -13,6 +13,7 @@
 
 
 
+
     .header
     {
     width: 100%;
@@ -38,7 +39,7 @@
    
 }
 
-img:hover{
+#logo:hover{
     transform: scale(1.1);
 }
 
@@ -156,26 +157,7 @@ main{
 
 
 
-footer {
-    width: 9100%;
-    height: 180px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color:goldenrod;
-    color:black;
-}
-.datos {
-    width: 300px;
-    height: 180px;
-    float: left;
-    padding: 20px;
-    box-sizing:content-box;
-}
-.redes{
-    float:right;
-    text-align: center;
-    padding: 20px;   
-}
+
 
 /* media */
 
@@ -251,4 +233,51 @@ footer {
         top: 15px;
         right: 35px;
     }
+}
+
+.footer {
+    background-color: rgb(102, 106, 108);
+}
+
+img {
+    width: 200px;
+    
+    
+}
+.footer-img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+span {
+    font-size: 23px;
+    padding: 20px;
+    color: #d2d6d9;
+   
+
+    
+    
+
+}
+.redes{
+    display: flex;
+    justify-content:space-evenly;
+    gap: 40px;
+    align-items: center;
+    padding: 20px;
+    height: 150px;
+    align-items: center;
+    
+
+}
+
+.pie{
+    color: #d2d6d9;
+}
+
+.copy{
+    justify-content: center;
+    display: flex;
 }
