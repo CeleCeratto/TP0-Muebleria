@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/login.css">
     <script src="https://kit.fontawesome.com/72ae305a89.js" crossorigin="anonymous"></script>
     <link rel="icon" href="/imagenes/iconos/Icono de pagina.ico" type="image/x-icon">
     <title>Pagina Principal</title>
@@ -39,22 +40,34 @@
       </div>
   </header>
   <main>
-    
-    
+
+    <div class="iniciar-sesion">
+      <h2>Iniciar Sesion</h2>
+      
+    <form  name="ingresar"  method="post" action="registrarse">
+      <div class="form-email">
+        <p>
+        <input type="email" name="email"><label for="email">Ingrese su email</label>
+      </p>
+      </div>
+      <div class="form-email">
+
+      <p>
+        <input type="password" name="Ingrese su Password"><label for="Password">Ingrese su contraseña</label>
+      </p>
+
+      </div>
+      <div class="recordar">
+        <a href="#"> ¿Olvido su contraseña?</a>
+      </div>
+      <input type="submit"  value="Iniciar Sesion">
+      <div class="registrarse">
+        <a href="#">Quiero registrarme</a>
+
+      </div>
+
+    </form>
  
-<div class="contenido-principal">
-  <section class="secciones">
-    <h1>Descripcion</h1>
-    <p class="descripcion">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-      Laboriosam, odio. Rem amet repellat maiores, id consequuntur nisi ab
-      enim incidunt error aliquid dolorum deserunt sint dignissimos nulla
-      iusto corporis mollitia!
-    </p> 
-   <a  href="./paginas/productos.html">PRODUCTOS</a> 
-  </section>
- 
-</div>
 </main>
 
 <footer class="footer">
