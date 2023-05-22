@@ -60,7 +60,6 @@
     display: inline; /* pone en linea el menu*/   
 }
 .navbar ul li a{
-    
     padding: 10px;
     font-weight: bold;
     
@@ -81,7 +80,8 @@
     display: none;
 }
 
-/**/@media screen and (max-width: 800px){
+/*menu responsive*/
+@media screen and (max-width: 800px){
     .navbar, .btn {
         display: none;
     }
@@ -181,7 +181,7 @@ main{
 }
 .header a{
     text-decoration: none;  
-    /*borramos el que teniamos en .header .nav-links a*/ 
+   
 }
 
 .header .overlay {
