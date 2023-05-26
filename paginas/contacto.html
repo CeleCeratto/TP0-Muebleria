@@ -20,10 +20,11 @@
         <nav class="navbar">
           <ul>
             <li><a href="../home.html">Inicio</a></li>
-            <li><a href="../paginas/servicios.html">Servicios</a></li>
-            <li><a href="../paginas/contacto.html">Contacto</a></li>
-            <li><a href="../paginas/iniciarsersion.htm">Iniciar Sesion</a></li>
-            <li><a href="../paginas/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="iniciarsesion.html">Iniciar Sesion</a></li>
+            <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
           </ul>
         </nav>
         <a onclick="openNav()" class="menu" href="#"><button><i class="fa-solid fa-bars"></i></button></a>
@@ -31,10 +32,12 @@
         <div id="mobile-menu" class="overlay">
               <a onclick="closeNav()" href="" class="close">&times;</a>
               <div class="overlay-content">
-               <a href="../paginas/servicios.html">Servicios</a>
-               <a href="../paginas/productos.html">Productos</a>
-               <a href="../paginas/iniciarsersion.htm">Iniciar Sesion</a>
-               <a href="./paginas/iniciarsersion.htm">Carrito de compras</a>
+                <a href="../home.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="productos.html">Productos</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="iniciarsesion.html">Iniciar Sesion</a>
+                <a href="carrito.html">Carrito de compras</a>
         </div>
         
       </div>
@@ -44,14 +47,24 @@
     <section class="secciones">
       <h1>Descripcion</h1>
       <p class="descripcion">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Laboriosam, odio. Rem amet repellat maiores, id consequuntur nisi ab
-        enim incidunt error aliquid dolorum deserunt sint dignissimos nulla
-        iusto corporis mollitia!
+       Si desea comunicarse con nosotros, puede dejarnos sus datos 
+       y su mensaje en las casillas debajo y muy pronto uno de nuestros
+       agentes se pondra en contacto con usted
       </p> 
     </section>
     <section class="secciones">
-      <h2>contacto</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje" cols="50" rows="5" placeholder="Ingrese aqui su consulta"></textarea>
+        <input class="formulario-btn" type="button" value="Enviar" onclick="enviarFormulario()">
+      </form>
+
       
     </section>
   </div>

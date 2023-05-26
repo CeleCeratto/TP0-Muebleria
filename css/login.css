@@ -120,7 +120,8 @@ input[type="submit"]:hover{
 }
 
 a{
-    color: rgb(76, 76, 150);
+    color: rgb(156, 94, 43);
+    font-weight: bold;
     text-decoration: none;
 }
 
