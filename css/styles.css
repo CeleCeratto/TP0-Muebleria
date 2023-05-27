@@ -31,6 +31,11 @@
 #logo:hover{
     transform: scale(1.1);
 }
+#map {
+	height: 500px;
+	width: 100%;
+    margin-top: 40px;
+}
 
 .navbar {
     width: 100%;
@@ -191,7 +196,7 @@ main{
     height: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .header .overlay a {
@@ -199,7 +204,7 @@ main{
     font-size: 36px;
     display: block;
     transition: all 0.3s ease 0s;
-    font-weight: 700; 
+    font-weight: 700;
     color: #ccd9e1;
 }
 
@@ -243,11 +248,6 @@ span {
     font-size: 23px;
     padding: 20px;
     color: #d2d6d9;
-   
-
-    
-    
-
 }
 .redes{
     display: flex;
@@ -257,7 +257,6 @@ span {
     padding: 20px;
     height: 150px;
     align-items: center;
-    
 
 }
 
