@@ -5,3 +5,38 @@ function openNav(){
 function closeNav(){
     document.getElementById("mobile-menu").style.width = "0%";
 }
+
+function enviarFormulario(){
+    var nombreContacto = document.getElementById('nombre').value;
+    var emailContacto = document.getElementById('email').value;
+    var mensajeContacto = document.getElementById('mensaje').value;
+    const DOMINIOS = ['@gmail.com', '@hotmail.com', '@yahoo.com']
+
+    function confirmarFormulario(){
+        if(confirm(`Nombre: ${nombreContacto}`)){
+            if (confirm(`Email: ${emailContacto}`)){;
+            confirm(`Mensaje: ${mensajeContacto}`);
+            };
+        };
+    }
+
+    if(nombreContacto == '' || emailContacto == '' || mensajeContacto == ''){
+        alert('Por favor complete todas las casillas');
+
+    }
+    else {
+        var dominioValido = false;
+        for (var i = 0; i < DOMINIOS.length; i++) {
+          if (emailContacto.endsWith(DOMINIOS[i])) {
+            dominioValido = true;
+            break;
+          }
+        }
+        if (dominioValido) {
+          confirmarFormulario();
+        }
+        else {
+          alert('Por favor incluya un email con uno de los siguientes dominios: ' + DOMINIOS.join(', '));
+        }
+    }
+}

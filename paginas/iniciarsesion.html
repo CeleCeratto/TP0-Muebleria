@@ -11,20 +11,20 @@
     <title>Pagina Principal</title>
 </head>
 <body>
-  
+
   <header class="header">
     <div>
       <a href="../home.html"><img src="/imagenes/iconos/studio vintage.png" id="logo"></a>
     </div>
-      
+
       <nav class="navbar">
         <ul>
-          
+          <li><a href="../home.html">Inicio</a></li>
           <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="./productos.html">Productos</a></li>
+          <li><a href="productos.html">Productos</a></li>
           <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="../paginas/iniciarsersion.html">Iniciar Sesion</a></li>
-          <li><a href="../paginas/carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          <li><a href="iniciarsesion.html">Iniciar Sesion</a></li>
+          <li><a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
 
         </ul>
       </nav>
@@ -33,11 +33,13 @@
            <div id="mobile-menu" class="overlay">
                  <a onclick="closeNav()" href="" class="close">&times;</a>
                  <div class="overlay-content">
-                  <a href="../paginas/servicios.html">Servicios</a>
-                  <a href="../paginas/productos.html">Productos</a>
-                  <a href="../paginas/contacto.html">Contacto</a>
-                  <a href="./paginas/iniciarsersion.html">Carrito de compras</a>
-                  
+                  <a href="../home.html">Inicio</a>
+                  <a href="servicios.html">Servicios</a>
+                  <a href="productos.html">Productos</a>
+                  <a href="contacto.html">Contacto</a>
+                  <a href="iniciarsesion.html">Iniciar Sesion</a>
+                  <a href="carrito.html">Carrito de compras</a>
+
            </div>
       </div>
   </header>
@@ -45,20 +47,18 @@
 
     <div class="iniciar-sesion">
       <h2>Iniciar Sesion</h2>
-      
+
     <form  name="ingresar"  method="post" action="registrarse">
       <div class="form-email">
-        <p>
-        <input type="email" name="email"><label for="email">Ingrese su email</label>
-      </p>
+        <label for="Email"></label>
+        <input type="email" name="email" id="Email" autocomplete="email" placeholder="Ingrese aqui su email">
       </div>
+
       <div class="form-email">
-
-      <p>
-        <input type="password" name="Ingrese su Password"><label for="Password">Ingrese su contraseña</label>
-      </p>
-
+        <label for="current_password"></label>
+        <input type="password" name="Ingrese su Password" id="current_password" autocomplete="current-password" placeholder="Ingrese aqui su contraseña">
       </div>
+
       <div class="recordar">
         <a href="#"> ¿Olvido su contraseña?</a>
       </div>
@@ -69,7 +69,7 @@
       </div>
 
     </form>
- 
+
 </main>
 
 <footer class="footer">
@@ -78,7 +78,7 @@
       <img src="../imagenes/iconos/logo footer.png" alt="">
      </div>
 
-     
+
      <div class="redes-logo">
      <span><i class="fa-brands fa-twitter"></i></span>
      <span><i class="fa-brands fa-youtube"></i></span>
@@ -95,9 +95,9 @@
       </div>
     </div>
   </div>
-  
+
   <hr>
-  
+
   <div class="copy">
       <p class="pie">Copyright©Muebles Vintage2023. Todos los derechos reservados</p>
 
