@@ -7,9 +7,12 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Poppins', sans-serif;
+    
 }
 
-
+body{
+   
+}
 
 
 
@@ -88,6 +91,9 @@
     .menu {
         display: inherit;
     }
+
+   
+
 }
 
 
@@ -237,6 +243,8 @@ main{
 
 .footer {
     background-color: rgb(102, 106, 108);
+    position: relative;
+    margin-top: auto;
 }
 
 img {
