@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@300;400;500&display=swap');
+
+.conteinedor-productos{
+
+    width: 100%;
+    max-width: 1500px;
+    height: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+
+
+.conteinedor-productos .tarjeta{
+    width: 330px;
+    height: 430px;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.30s;
+
+}
+
+
+.conteinedor-productos .tarjeta:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2);
+
+}
+
+ .conteinedor-productos .tarjeta #imagen{
+    width: 200px;
+    height: 100px;
+
+}
+
+.conteinedor-productos .tarjeta h3{
+    font-weight: 500;
+}
+
+.conteinedor-productos .tarjeta p{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 200;
+
+
+}
+
+.conteinedor-productos .tarjeta button{
+    font-weight: 500;
+    color: #1b3039;
+    padding: 9px 10px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border-bottom: 10px;
+}
+
+.conteinedor-productos .tarjeta button:hover{
+    background-color: #e2f1f8;
+    color: #392e12;
+    transform: scale(1.1);
+}
+
