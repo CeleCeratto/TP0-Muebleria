@@ -29,7 +29,6 @@ productoEnCarrito.forEach(function(producto) {
 
     contenedorProducto.appendChild(imagen);
     contenedorProducto.appendChild(titulo);
-    contenedorProducto.appendChild(descripcion);
     contenedorProducto.appendChild(precioElemento);
 
     // Pone en display los productos agregados, en forma de lista
