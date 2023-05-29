@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <script src="https://kit.fontawesome.com/72ae305a89.js" crossorigin="anonymous"></script>
+    <script src="https://sdk.mercadopago.com/js/v"></script>
     <link rel="icon" href="/imagenes/iconos/Icono de pagina.ico" type="image/x-icon">
     <title>Productos</title>
 </head>
@@ -43,7 +44,7 @@
     </header>
     <main>
   <div class="contenido-principal">
-    <section class="secciones">
+    <section class="secciones" >
         <div class="carrito-container">
             <h2>Carrito de compras</h2>
             <button id="borrar">Borrar todo</button><br><br>
@@ -53,6 +54,7 @@
             <p id="total"></p>
             <button id="checkout">Finalizar compra</button>
         </div>
+      </section>
   </div>
   </main>
 
@@ -87,5 +89,6 @@
     </div>
     </footer>
     <script src="../carrito.js"></script>
+    <script src="../mercadopago.js"></script>
   </body>
 </html>
