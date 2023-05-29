@@ -24,9 +24,13 @@ function agregarAlCarrito(evento) {
     // Convierte la informacion del producto en una lista
     var productoEnCarrito = JSON.parse(localStorage.getItem('productoEnCarrito')) || [];
 
-    // Agrega productos nuevos a la lista anterior
-    productoEnCarrito.push(item);
-
-    // Almacena los productos agregados al carrito, en la sesion actual, como string
-    localStorage.setItem('productoEnCarrito', JSON.stringify(productoEnCarrito));
+    if (productoEnCarrito.length < 3) {
+        // Agrega productos nuevos a la lista anterior
+        productoEnCarrito.push(item);
+        // Almacena los productos agregados al carrito, en la sesion actual, como string
+        localStorage.setItem('productoEnCarrito', JSON.stringify(productoEnCarrito));
+    }
+    else {
+        alert('Solo puede agregar 3 productos a la vez');
+    }
 }

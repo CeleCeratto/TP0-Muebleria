@@ -7,10 +7,19 @@ function enviarFormulario(){
     //Confirmacion del usuario de los datos de las tres casillas
     function confirmarFormulario(){
         if(confirm(`Nombre: ${nombreContacto}`)){
-            if (confirm(`Email: ${emailContacto}`)){;
-            confirm(`Mensaje: ${mensajeContacto}`);
+            if (confirm(`Email: ${emailContacto}`)){
+              if (confirm(`Mensaje: ${mensajeContacto}`)){
+                mostrarFormulario();
+                alert("Su consulta ha sido enviada con exito.")
+              };
             };
         };
+    }
+
+    function mostrarFormulario(){
+      console.log(`Nombre: ${nombreContacto}`);
+      console.log(`Email: ${emailContacto}`);
+      console.log(`Mensaje: ${mensajeContacto}`);
     }
 
     //Requisito de TODAS las casillas
